@@ -253,7 +253,7 @@ function loadPertamaKali() {
 }
 
 function tampilkanDataNegara(){
-    // sortir data negara berdasarkan inputan form search lalu urutkan berdasarkan alphabet (A - Z)
+    // sortir data negara lalu urutkan berdasarkan alphabet (A - Z)
     var sorted = negara.sort((a, b) => a.name > b.name ? 1 : -1);
 
     // data yang sudah di sortir di groupkan berdasarkan huruf awalan negara
@@ -386,7 +386,7 @@ function negaraByAlphabet(by){
         negara.forEach(function(data, index){
             if(data.name.indexOf(by) == 0) results.push(data);
         });
-        // sortir data negara berdasarkan inputan form search lalu urutkan berdasarkan alphabet (A - Z)
+        // sortir data negara berdasarkan huruf awalan yang di pilih lalu urutkan berdasarkan alphabet (A - Z)
         var sorted = results.sort((a, b) => a.name > b.name ? 1 : -1);
 
         // data yang sudah di sortir di groupkan berdasarkan huruf awalan negara
